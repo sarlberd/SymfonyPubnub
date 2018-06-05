@@ -5,12 +5,13 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="txtony.pubnub.client.pubnub.class" type="string">\PubNub\PubNub</parameter>
+        <parameter key="txtony.pubnub.client.pubnub.class" type="string">TxTony\SymfonyPubnub\Controller\PubnubController</parameter>
     </parameters>
 
     <services>
+        <defaults autowire="true" autoconfigure="true" public="false" />
         <service id="txtony.pubnub.client.pubnub" class="%txtony.pubnub.client.pubnub.class%">
-            <argument type="collection"/>
+            <argument type="collection"></argument>
         </service>
     </services>
 
