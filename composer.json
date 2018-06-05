@@ -1,5 +1,5 @@
 {
-    "name": "TxTony/SymfonyPubnub",
+    "name": "txtony/symfony-pubnub",
     "description": "Implement Pubnub into your Symfony application.",
     "type": "symfony-bundle",
     "license": "MIT",
