@@ -76,6 +76,15 @@ Get the pubnub client from the container.
 ```php
 $pubnub = $this->get('txtony.pubnub.client.pubnub');
 ```
-
+In your code this is an exemple to publish message in 'myChannel'
+```php
+// return a timetoken like this "timetoken": 123456789123456789
+return $pubnub->getPubnub()->publish()
+    ->channel("myChannel")
+    ->message("Hello world")
+    ->usePost(true)
+    ->sync();
+ ```   
+    
 The `$pubnub` object is an instance of `Pubnub\Pubnub`. Usage documentation can
 be found in the [Pubnub repository](https://github.com/pubnub/php).
