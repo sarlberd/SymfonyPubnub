@@ -53,7 +53,7 @@ All configuration options on the Pubnub\Pubnub class can be configured. Only
 `publish_key` and `subscribe_key` are required. Default reference is below.
 
 ```yaml
-txtony_pubnub:
+tx_tony_symfony_pubnub:
     publish_key: <your_pub_key> # Required
     subscribe_key: <your_sub_key> # Required
     secret_key: false
