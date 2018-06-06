@@ -19,7 +19,7 @@ class PubnubController extends Controller
         $pnconf->setSubscribeKey($configs["subscribe_key"]);
         $pnconf->setPublishKey($configs["publish_key"]);
         $pnconf->setSecretKey($configs["secret_key"]);
-        $pnconf->setCipherKey($configs["cipher_key"]);
+        false == $configs["cipher_key"]  ? null : $pnconf->setCipherKey($configs["cipher_key"]);
         $pnconf->setSecure($configs["ssl"]);
         $this->configs = $configs;
         $pubnub = new PubNub($pnconf);
